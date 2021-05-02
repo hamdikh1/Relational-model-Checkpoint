@@ -1,0 +1,23 @@
+hotel(Hotel_id,Hotel_name)
+Type(Type_id, Type_name)
+Room(room_id, Floor)
+Employee(Employe_id, Employe_Name, Employee_Specialite)
+Category(Category_id, Category_name, Price, beds_numbers)
+
+////////////////////////////
+Employee(Employe_id, Employe_Name, Employee_Specialite, 
+hotel(Hotel_id,Hotel_name)
+///////////////////////////
+
+Employee(Employe_id, Employe_Name, Employee_Specialite, #director_id)
+
+//////////////////////////////////////
+Type(Type_id, Type_name)
+hotel(Hotel_id,Type_id, Hotel_name)
+//////////////////////////////////////
+hotel(Hotel_id,Hotel_name)
+Room(room_id,Hotel_id, Floor)
+/////////////////////////////////////////////////////////////
+
+Category(Category_id, Category_name, Price, beds_numbers)
+Room(room_id,Category_id, Floor)
